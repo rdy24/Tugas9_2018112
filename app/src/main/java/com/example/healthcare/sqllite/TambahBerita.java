@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -52,6 +53,7 @@ public class TambahBerita extends AppCompatActivity {
   String storagePermission[];
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     super.onCreate(savedInstanceState);
     binding = ActivityTambahBeritaBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());

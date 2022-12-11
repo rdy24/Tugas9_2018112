@@ -5,6 +5,7 @@ import static com.example.healthcare.sqllite.DBmain.TABLENAME;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -38,6 +39,7 @@ public class DisplayData extends AppCompatActivity {
   private ActionBarDrawerToggle toggle;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     super.onCreate(savedInstanceState);
     binding = ActivityDisplayDataBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());

@@ -21,7 +21,6 @@
             app:titleTextColor="@color/white"
             android:background="@color/blue"
             android:elevation="4dp"
-
             android:theme="@style/ThemeOverlay.AppCompat.DayNight"
             app:popupTheme="@style/Theme.AppCompat.Light" />
         <LinearLayout

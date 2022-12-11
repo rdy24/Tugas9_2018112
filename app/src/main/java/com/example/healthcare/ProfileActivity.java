@@ -3,6 +3,7 @@ package com.example.healthcare;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -17,6 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
   private ActionBarDrawerToggle toggle;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_profile);
     Toolbar toolbar = findViewById(R.id.toolbar);

@@ -3,6 +3,7 @@ package com.example.healthcare.api;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -45,6 +46,7 @@ public class MovieActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_movie);
     Toolbar toolbar = findViewById(R.id.toolbar);
@@ -162,5 +164,4 @@ public class MovieActivity extends AppCompatActivity {
       });
     }
   }
-
 }
