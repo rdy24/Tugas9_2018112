@@ -23,5 +23,9 @@
             android:id="@+id/nav_sql"
             android:icon="@drawable/ic_baseline_data_array_24"
             android:title="SQL Lite" />
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/ic_baseline_movie_24"
+            android:title="Movie API" />
     </group>
 </menu>

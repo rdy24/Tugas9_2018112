@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.healthcare.alarm.AlarmReceiver;
+import com.example.healthcare.api.MovieActivity;
 import com.example.healthcare.databinding.ActivityMainBinding;
 import com.example.healthcare.sqllite.DisplayData;
 import com.google.android.material.navigation.NavigationView;
@@ -79,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
           case R.id.nav_sql:
             Intent intent4 = new Intent(MainActivity.this, DisplayData.class);
             startActivity(intent4);
+            break;
+          case R.id.nav_movie:
+            Intent intent5 = new Intent(MainActivity.this, MovieActivity.class);
+            startActivity(intent5);
             break;
         }
         return true;

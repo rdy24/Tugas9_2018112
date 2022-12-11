@@ -18,7 +18,9 @@ import android.view.View;
 
 import com.example.healthcare.adapter.HealthAdapter;
 import com.example.healthcare.adapter.TrendingAdapter;
+import com.example.healthcare.api.MovieActivity;
 import com.example.healthcare.databinding.ActivityNewsBinding;
+import com.example.healthcare.sqllite.DisplayData;
 import com.example.healthcare.worker.MyWorker;
 import com.google.android.material.navigation.NavigationView;
 
@@ -93,6 +95,14 @@ public class NewsActivity extends AppCompatActivity {
           case R.id.nav_profile:
             Intent intent3 = new Intent(NewsActivity.this, ProfileActivity.class);
             startActivity(intent3);
+            break;
+          case R.id.nav_sql:
+            Intent intent4 = new Intent(NewsActivity.this, DisplayData.class);
+            startActivity(intent4);
+            break;
+          case R.id.nav_movie:
+            Intent intent5 = new Intent(NewsActivity.this, MovieActivity.class);
+            startActivity(intent5);
             break;
         }
         return true;

@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.healthcare.api.MovieActivity;
+import com.example.healthcare.sqllite.DisplayData;
 import com.google.android.material.navigation.NavigationView;
 
 public class ConsultantActivity extends AppCompatActivity {
@@ -50,6 +52,14 @@ public class ConsultantActivity extends AppCompatActivity {
           case R.id.nav_profile:
             Intent intent3 = new Intent(ConsultantActivity.this, ProfileActivity.class);
             startActivity(intent3);
+            break;
+            case R.id.nav_sql:
+            Intent intent4 = new Intent(ConsultantActivity.this, DisplayData.class);
+            startActivity(intent4);
+            break;
+          case R.id.nav_movie:
+            Intent intent5 = new Intent(ConsultantActivity.this, MovieActivity.class);
+            startActivity(intent5);
             break;
         }
         return true;

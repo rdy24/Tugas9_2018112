@@ -21,6 +21,8 @@ import com.example.healthcare.MainActivity;
 import com.example.healthcare.NewsActivity;
 import com.example.healthcare.ProfileActivity;
 import com.example.healthcare.R;
+import com.example.healthcare.api.MovieActivity;
+import com.example.healthcare.api.MovieDetailActivity;
 import com.example.healthcare.databinding.ActivityDisplayDataBinding;
 import com.google.android.material.navigation.NavigationView;
 
@@ -75,6 +77,10 @@ public class DisplayData extends AppCompatActivity {
           case R.id.nav_sql:
             Intent intent4 = new Intent(DisplayData.this, DisplayData.class);
             startActivity(intent4);
+            break;
+          case R.id.nav_movie:
+            Intent intent5 = new Intent(DisplayData.this, MovieActivity.class);
+            startActivity(intent5);
             break;
         }
         return true;

@@ -30,6 +30,7 @@ import com.example.healthcare.MainActivity;
 import com.example.healthcare.NewsActivity;
 import com.example.healthcare.ProfileActivity;
 import com.example.healthcare.R;
+import com.example.healthcare.api.MovieActivity;
 import com.example.healthcare.databinding.ActivityTambahBeritaBinding;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
@@ -91,6 +92,10 @@ public class TambahBerita extends AppCompatActivity {
           case R.id.nav_sql:
             Intent intent4 = new Intent(TambahBerita.this, DisplayData.class);
             startActivity(intent4);
+            break;
+          case R.id.nav_movie:
+            Intent intent5 = new Intent(TambahBerita.this, MovieActivity.class);
+            startActivity(intent5);
             break;
         }
         return true;
